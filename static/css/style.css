@@ -1,0 +1,61 @@
+body {
+    background-color: darkslateblue;
+    color: white;
+    font-family: Arial;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin-right: 50px;
+    list-style-type: none;
+    margin-right: 80px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80px;
+    background-color: cornflowerblue;
+    align-items: center;
+    margin: 0px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.delete_button {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 180px;
+    background-color: coral;
+}
+
+.create_button {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 180px;
+    background-color: seagreen;
+}

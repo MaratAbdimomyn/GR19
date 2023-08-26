@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div style="padding: 50px;">
+    <ul>
+        {% for i in ones %}
+        <li><a href={% url 'about' i.id %}><h3> {{ i.brand }} </h3></a></li>
+        {% endfor %}
+    </ul>
+    <div class="create_button">
+        <form method="post">
+            {% csrf_token %}
+            <a href={% url 'create' %}>Создать устройство</a>
+        </form></div></div>
+{% endblock %}

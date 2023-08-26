@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Поиск</h2>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="search" placeholder="Введите название">
+    <button type="submit">Найти</button>
+</form>
+    {% for i in filter %}
+    <ul>
+        <li>{{ i.brand }}</li>
+        <li>{{ i.model_name }}</li>
+        <li>{{ i.country }}</li>
+    </ul>
+    {% endfor%}
+{% endblock %}
